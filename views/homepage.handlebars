@@ -1,0 +1,10 @@
+<h1>Homepage</h1>
+<h3>All Blogs:</h3>
+{{#each blogs}}
+<div class="card">
+    <h3><a href="/blog/{{id}}">{{id}}. {{name}} by {{user.name}}</a></h3>
+    <h5>Created on: {{date_created}}</h5>
+    <p>{{description}}</p>
+    <hr>
+</div>
+{{/each}}

@@ -1,0 +1,17 @@
+<h1>Welcome back, {{name}}</h1>
+<h2>My Blogs</h2>
+{{#each blogs}}
+    <a href="/blog/{{id}}">{{name}}</a>
+    <button class="del-btn" data-id="{{id}}">Delete</button>
+    <hr>
+{{/each}}
+
+<h2>Add a blog</h2>
+<form action="" id="new-blog">
+    <input type="text" id="name" placeholder="name">
+    <textarea id="description" placeholder="description"></textarea>
+    <input type="text" id="blogdes">
+    <button>Create</button>
+</form>
+<script src="newBlog.js"></script>
+<script src="delBtn.js"></script>
